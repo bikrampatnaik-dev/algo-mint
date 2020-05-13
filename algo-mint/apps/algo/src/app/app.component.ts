@@ -8,6 +8,6 @@ import { Message } from '@algo-mint/api-interfaces';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  // hello$ = this.http.get<Message>('/api/hello');
+  // constructor(private http: HttpClient) {}
 }

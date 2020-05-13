@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@algo-mint/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@algo-mint/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@algo-mint/algo-login": ["libs/algo-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

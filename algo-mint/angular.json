@@ -202,6 +202,50 @@
           }
         }
       }
+    },
+    "algo-login": {
+      "projectType": "library",
+      "root": "libs/algo-login",
+      "sourceRoot": "libs/algo-login/src",
+      "prefix": "algo-mint",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/algo-login/tsconfig.lib.json",
+            "project": "libs/algo-login/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/algo-login/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/algo-login/tsconfig.lib.json",
+              "libs/algo-login/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/algo-login/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/algo-login/jest.config.js",
+            "tsConfig": "libs/algo-login/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/algo-login/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
