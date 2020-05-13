@@ -6,6 +6,16 @@ This project was generated using [Nx](https://nx.dev).
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
 
+🔎 **Heroku App Deployemnt**
+
+
+## How to run the application locally
+> git clone (https://github.com/bikrampatnaik-dev/algo-mint.git)
+> cd algo-mint
+> npm intsall (it will install all the dependecy)
+> ng serve (application will served on ) (http://localhost:4200/) 
+
+
 🔎 **Nx is a set of Extensible Dev Tools for Monorepos**
 
 ## Quick Start & Documentation
