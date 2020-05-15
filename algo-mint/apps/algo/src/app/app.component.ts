@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@algo-mint/api-interfaces';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'algo-mint-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'body',
+  template: '<router-outlet></router-outlet>'
 })
 export class AppComponent {
-  // hello$ = this.http.get<Message>('/api/hello');
-  // constructor(private http: HttpClient) {}
+  constructor(private router: Router) {
+    this.router.events.subscribe(evt => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
+  }
 }

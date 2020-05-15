@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@import "variables";
+@import "~@coreui/coreui/scss/coreui";
+@import "custom";
+
+.bg-algo-warn {
+    background: $bgAlgoWarning;
+}
+
+.bg-algo-warn-trans {
+    background: $bgAlgoWarningTransparent;
+}
+
+.bg-algo-dark {
+    background: $bgAlgoDark;
+}

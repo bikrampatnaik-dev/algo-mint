@@ -55,6 +55,7 @@
     "@coreui/coreui": "^2.1.8",
     "@coreui/icons": "^0.3.0",
     "@ng-bootstrap/ng-bootstrap": "^6.0.0",
+    "bootstrap": "4.3.1",
     "@ngrx/effects": "^9.1.0",
     "@ngrx/store": "^9.0.0",
     "@ngrx/store-devtools": "^9.0.0",

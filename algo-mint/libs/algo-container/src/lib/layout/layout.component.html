@@ -1,0 +1,75 @@
+<app-header
+  class=""
+  [navbarBrandRouterLink]="['/dashboard']"
+  [fixed]="true"
+  [navbarBrandFull]="{
+    src: 'assets/img/brand/logo.svg',
+    width: 89,
+    height: 25,
+    alt: 'CoreUI Logo'
+  }"
+  [navbarBrandMinimized]="{
+    src: 'assets/img/brand/sygnet.svg',
+    width: 30,
+    height: 30,
+    alt: 'CoreUI Logo'
+  }"
+  [sidebarToggler]="'lg'"
+  [asideMenuToggler]="'lg'"
+>
+  <div class="ml-auto">
+    <div class="btn-group">
+      <div class="btn-group dropleft" role="group">
+        <button type="button" class="btn btn-secondary" >
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</app-header>
+<div class="app-body">
+  <app-sidebar
+    [fixed]="true"
+    [display]="'lg'"
+    [minimized]="minimized"
+    #sidebar
+    (minimizedChange)="toggleMinimize($event)"
+  >
+    <app-sidebar-nav
+      [navItems]="navItems"
+      [perfectScrollbar]
+      [disabled]="sidebar.minimized"
+    ></app-sidebar-nav>
+    <app-sidebar-minimizer></app-sidebar-minimizer>
+  </app-sidebar>
+  <!-- Main content -->
+  <main class="main">
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item active">Dashboard</li>
+
+      <li class="breadcrumb-menu">
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Button group with nested dropdown"
+        >
+          <a class="btn" href="#"><i class="icon-speech"></i></a>
+          <a class="btn" href="#"
+            ><i class="icon-settings"></i> &nbsp;Settings</a
+          >
+        </div>
+      </li>
+    </ol>
+
+    <router-outlet></router-outlet>
+  </main>
+  <app-aside [fixed]="true" [display]="false"></app-aside>
+</div>
+<div class="app-footer p-3" #footer>
+  <span><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</span>
+  <span class="ml-auto"
+    >Powered by
+    <a href="https://coreui.io/angular">CoreUI 2 for Angular</a>
+  </span>
+</div>

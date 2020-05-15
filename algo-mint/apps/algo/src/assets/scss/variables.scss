@@ -1,0 +1,23 @@
+// core overrides
+$dangerTop: #FF5370;
+$dangerEnd: #ff869a;
+$primaryTop: #4099ff;
+$primaryEnd: #73b4ff;
+$sucessTop: #2ed8b6;
+$sucessEnd: #59e0c5;
+$warningTop: #FFB64D;
+$warningTransparentStart: #ffad38de;
+$warningTransparentEnd: #f5c37cb0;
+$warningEnd: #ffcb80;
+$infoTop: #00bcd4;
+$infoEnd: #08e3ff;
+$darkStart: #1e222d;
+$darkEnd: #272e3a;
+
+$bgAlgoWarning: linear-gradient(45deg, $warningTop, $warningEnd) !important;
+$bgAlgoWarningTransparent: linear-gradient(45deg, $warningTransparentStart, $warningTransparentEnd) !important;
+$bgAlgoPrimary: linear-gradient(45deg, $primaryTop, $primaryEnd) !important;
+$bgAlgoSuccess: linear-gradient(45deg, $sucessTop, $sucessEnd) !important;
+$bgAlgoDanger: linear-gradient(45deg, $dangerTop, $dangerEnd) !important;
+$bgAlgoInfo: linear-gradient(45deg, $infoTop, $infoEnd) !important;
+$bgAlgoDark: linear-gradient(45deg, $darkStart, $darkEnd) !important;

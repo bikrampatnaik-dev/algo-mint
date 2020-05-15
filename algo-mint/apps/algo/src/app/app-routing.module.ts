@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from '@algo-mint/algo-container';
+
 const routes: Routes = [
   {
     path: '',
@@ -9,20 +11,26 @@ const routes: Routes = [
   {
     path: '',
     // component: LoginLayoutComponent,
-    loadChildren: () => import('@algo-mint/algo-login').then(m => m.AlgoLoginModule)
+    loadChildren: () =>
+      import('@algo-mint/algo-login').then(m => m.AlgoLoginModule)
   },
   {
     path: '',
-    // component: DefaultLayoutComponent,
+    component: LayoutComponent,
     // canActivate: [HomeGuard],
-    children: []
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('@algo-mint/algo-dashboard').then(m => m.AlgoDashboardModule)
+      }
+    ]
   },
   // { path: '**', component: PageNotFoundComponent }
   { path: '**', redirectTo: '' }
 ];
-  
-@NgModule({
 
+@NgModule({
   imports: [
     RouterModule.forRoot(routes, {
       scrollPositionRestoration: 'enabled',

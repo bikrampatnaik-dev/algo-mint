@@ -34,6 +34,12 @@
     },
     "algo-login": {
       "tags": []
+    },
+    "algo-dashboard": {
+      "tags": []
+    },
+    "algo-container": {
+      "tags": []
     }
   }
 }

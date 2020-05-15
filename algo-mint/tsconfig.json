@@ -16,8 +16,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@algo-mint/*": ["libs/*"],
+      "@default/*": ["apps/algo/src/app/*"],
+      "@env-api/environment": ["apps/algo/src/environments/environment.ts"],
       "@algo-mint/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@algo-mint/algo-login": ["libs/algo-login/src/index.ts"]
+      "@algo-mint/algo-login": ["libs/algo-login/src/index.ts"],
+      "@algo-mint/algo-dashboard": ["libs/algo-dashboard/src/index.ts"],
+      "@algo-mint/algo-container": ["libs/algo-container/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
