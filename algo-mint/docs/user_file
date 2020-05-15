@@ -1,0 +1,9 @@
+{
+    "name": "user",
+    "email": "user@uesr.com",
+    "password": "$2a$10$pFkVlKpIK0ZkJjEdYEcj8e1RrN0VKOniR4OdH4cP43d9o/76bMayu",
+    "enabled": false,
+    "active": 1,
+    "aliceToken": "dx-jLqn47_3wLljyi4b-FcF3RKuPWTW4mvq24SLx4co.YYt8iD_1qX6mDoe69DiRFhZy0L8KAyPny6ngfxa85w8",
+    "fyersToken": ""
+}
